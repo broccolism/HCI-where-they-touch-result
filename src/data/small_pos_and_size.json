@@ -1,0 +1,262 @@
+[
+  {
+    "name": "ㅡ",
+    "left": 283,
+    "right": 302,
+    "top": 372,
+    "bottom": 396,
+    "center": { "x": 292.5, "y": 384 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅜ",
+    "left": 248,
+    "right": 267,
+    "top": 372,
+    "bottom": 396,
+    "center": { "x": 257.5, "y": 384 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅠ",
+    "left": 213,
+    "right": 232,
+    "top": 372,
+    "bottom": 396,
+    "center": { "x": 222.5, "y": 384 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅍ",
+    "left": 178,
+    "right": 197,
+    "top": 372,
+    "bottom": 396,
+    "center": { "x": 187.5, "y": 384 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅊ",
+    "left": 143,
+    "right": 162,
+    "top": 372,
+    "bottom": 396,
+    "center": { "x": 152.5, "y": 384 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅌ",
+    "left": 108,
+    "right": 127,
+    "top": 372,
+    "bottom": 396,
+    "center": { "x": 117.5, "y": 384 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅋ",
+    "left": 73,
+    "right": 92,
+    "top": 372,
+    "bottom": 396,
+    "center": { "x": 82.5, "y": 384 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅣ",
+    "left": 318,
+    "right": 337,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 327.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅏ",
+    "left": 283,
+    "right": 302,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 292.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅓ",
+    "left": 248,
+    "right": 267,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 257.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅗ",
+    "left": 213,
+    "right": 232,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 222.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅎ",
+    "left": 178,
+    "right": 197,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 187.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㄹ",
+    "left": 143,
+    "right": 162,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 152.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅇ",
+    "left": 108,
+    "right": 127,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 117.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㄴ",
+    "left": 73,
+    "right": 92,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 82.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅁ",
+    "left": 38,
+    "right": 57,
+    "top": 320,
+    "bottom": 344,
+    "center": { "x": 47.5, "y": 332 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅔ",
+    "left": 335.5,
+    "right": 354.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 345, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅐ",
+    "left": 300.5,
+    "right": 319.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 310, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅑ",
+    "left": 265.5,
+    "right": 284.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 275, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅕ",
+    "left": 230.5,
+    "right": 249.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 240, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅛ",
+    "left": 195.5,
+    "right": 214.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 205, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅅ",
+    "left": 160.5,
+    "right": 179.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 170, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㄱ",
+    "left": 125.5,
+    "right": 144.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 135, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㄷ",
+    "left": 90.5,
+    "right": 109.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 100, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅈ",
+    "left": 55.5,
+    "right": 74.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 65, "y": 280 },
+    "width": 19,
+    "height": 24
+  },
+  {
+    "name": "ㅂ",
+    "left": 20.5,
+    "right": 39.5,
+    "top": 268,
+    "bottom": 292,
+    "center": { "x": 30, "y": 280 },
+    "width": 19,
+    "height": 24
+  }
+]
