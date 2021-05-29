@@ -1,0 +1,82 @@
+[
+  {
+    "bottom": 416,
+    "center": { "x": 198, "y": 407 },
+    "height": 18,
+    "left": 23,
+    "name": "시작하기",
+    "right": 373,
+    "top": 398,
+    "width": 350
+  },
+  {
+    "bottom": 600.5,
+    "center": { "x": 198, "y": 570.5 },
+    "height": 60,
+    "left": 158,
+    "name": "시작",
+    "right": 238,
+    "top": 540.5,
+    "width": 80
+  },
+  {
+    "bottom": 281,
+    "center": { "x": 191, "y": 256 },
+    "height": 50,
+    "left": 32,
+    "name": "남자",
+    "right": 350,
+    "top": 231,
+    "width": 318
+  },
+  {
+    "bottom": 331,
+    "center": { "x": 191, "y": 306 },
+    "height": 50,
+    "left": 32,
+    "name": "여자",
+    "right": 350,
+    "top": 281,
+    "width": 318
+  },
+  {
+    "bottom": 501,
+    "center": { "x": 191, "y": 476 },
+    "height": 50,
+    "left": 32,
+    "name": "긴 글 적기",
+    "right": 350,
+    "top": 451,
+    "width": 318
+  },
+  {
+    "bottom": 551,
+    "center": { "x": 191, "y": 526 },
+    "height": 50,
+    "left": 32,
+    "name": "짧은 글 적기",
+    "right": 350,
+    "top": 501,
+    "width": 318
+  },
+  {
+    "bottom": 601,
+    "center": { "x": 191, "y": 576 },
+    "height": 50,
+    "left": 32,
+    "name": "위 2가지 모두",
+    "right": 350,
+    "top": 551,
+    "width": 318
+  },
+  {
+    "bottom": 672.5,
+    "center": { "x": 198, "y": 651 },
+    "height": 43,
+    "left": 33,
+    "name": "결과 보기",
+    "right": 363,
+    "top": 629.5,
+    "width": 330
+  }
+]
