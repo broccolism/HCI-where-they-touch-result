@@ -1,7 +1,7 @@
 # encoding=utf8
 class Touch:
-    def __init__(self, x, y, page, target, created_at):
-        self.x = x
+    def __init__(self, width, x, y, page, target, created_at):
+        self.x = x - (width - 350) / 2
         self.y = y
         self.page = page
         self.target = target
