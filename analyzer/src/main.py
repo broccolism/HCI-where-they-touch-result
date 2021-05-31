@@ -332,17 +332,26 @@ def get_avg_trials():
     for key in ALL_TRIALS:
         trials = ALL_TRIALS[key]
         counter = Counter(trials)
-        print(counter)
+        x = sorted([name for name in counter])
+        y = [counter[name] for name in x]
+        print(x, y)
+        plt.plot(x, y)
+        plt.title(key)
+
+        file = plt.gcf()
+        file.savefig(f'{const.RESULT_PATH}/{key}-graph.png', dpi=const.DPI)
+        plt.show()
+        print(f"Successfully saved {const.RESULT_PATH}/{key}-graph.png!")
 
 
 if __name__ == "__main__":
     init_font()
     init_data()
 
-    # draw_all_touches()
+    draw_all_touches()
 
-    # large_x, large_y, small_x, small_y = get_average_diff()
-    # show_boxplot(large_x, large_y)
-    # show_boxplot(small_x, small_y)
+    large_x, large_y, small_x, small_y = get_average_diff()
+    show_boxplot(large_x, large_y)
+    show_boxplot(small_x, small_y)
 
     get_avg_trials()
