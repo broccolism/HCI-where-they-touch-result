@@ -11,6 +11,12 @@ PAGES = ['/',
          '/keyboard#5',
          '/question']
 
+LARGE_PAGES = [
+    '/keyboard#0',
+    '/keyboard#2',
+    '/keyboard#4'
+]
+
 TARGETS = [
     'ㅂ',
     'ㅈ',
@@ -47,6 +53,7 @@ TARGET_IN_PAGE = [
     ("/keyboard#4", "ㅎㅜㄹㅏㅇㅣㄷㅡㅊㅣㅋㅣㄴ", "후라이드치킨"),
     ("/keyboard#5", "ㅂㅐㅅㅈㅣ", "뱃지")
 ]
+
 
 BUTTON_IN_PAGE = [
     ("/", "home-button"),

@@ -29,3 +29,6 @@ class Touch:
 
     def is_in_target(self, target):
         return self.target == target
+
+    def is_large(self):
+        return self.is_large
