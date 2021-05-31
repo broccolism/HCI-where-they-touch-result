@@ -140,7 +140,7 @@ def show_pos_graph(data, colors, title):
     C.extend(colors)
 
     plt.figure(figsize=(const.MAX_WIDTH/const.DPI, const.MAX_HEIGHT/const.DPI))
-    plt.scatter(X, Y, c=C, s=3/const.DPI)
+    plt.scatter(X, Y, c=C, s=5/const.DPI)
     plt.xlim(0, const.MAX_WIDTH)
     plt.ylim(const.MAX_HEIGHT, 0)
     plt.title(title)
@@ -148,7 +148,7 @@ def show_pos_graph(data, colors, title):
     file = plt.gcf()
     file.savefig(f'{const.RESULT_PATH}/{title}.png', dpi=const.DPI)
     plt.show()
-    print(f"Successfully saved {title}.png!")
+    print(f"Successfully saved {const.RESULT_PATH}/{title}.png!")
 
 
 def draw_correct_touches():
@@ -159,7 +159,7 @@ def draw_correct_touches():
             show_pos_graph(touch_pos_list, colors, f"{path[1:]}-{char}")
 
 
-def draw_all_touches():
+def draw_all_key_touches():
     for (path, _, word) in const.TARGET_IN_PAGE:
         logs_in_path = get_logs_by_path(path)
         touch_pos_list, colors = get_touch_pos_in_page(logs_in_path)
@@ -192,6 +192,10 @@ def get_average_diff():
     return (x_diff_list_large, y_diff_list_large, x_diff_list_small, y_diff_list_small)
 
 
+# This code is from=========================================================
+# https://stackoverflow.com/questions/53849636/draw-a-double-box-plot-chart-2-axes-box-plot-box-plot-correlation-diagram-in
+
+
 def show_boxplot(x, y):
     # the figure and axes
     fig, (ax1, ax2) = plt.subplots(ncols=2)
@@ -203,9 +207,6 @@ def show_boxplot(x, y):
     boxplot_2d(x, y, ax=ax2, whis=1)
 
     plt.show()
-
-# This code is from
-# https://stackoverflow.com/questions/53849636/draw-a-double-box-plot-chart-2-axes-box-plot-box-plot-correlation-diagram-in
 
 
 def boxplot_2d(x, y, ax, whis=1.5):
@@ -327,6 +328,8 @@ def boxplot_2d(x, y, ax, whis=1.5):
         facecolors='none', edgecolors='k'
     )
 
+# DONE!=========================================================
+
 
 def get_avg_trials():
     for key in ALL_TRIALS:
@@ -344,11 +347,19 @@ def get_avg_trials():
         print(f"Successfully saved {const.RESULT_PATH}/{key}-graph.png!")
 
 
+def draw_all_button_touches():
+    for page in const.PAGE_WITH_BUTTON:
+        page_touches = [touch.get_position() for touch in ALL_TOUCHES if touch.get_page() == page]
+        C = [const.GREEN for i in range(len(page_touches))]
+        show_pos_graph(page_touches, C, f"{page}-all-touches")
+
+
 if __name__ == "__main__":
     init_font()
     init_data()
 
-    draw_all_touches()
+    draw_all_key_touches()
+    draw_all_button_touches()
 
     large_x, large_y, small_x, small_y = get_average_diff()
     show_boxplot(large_x, large_y)

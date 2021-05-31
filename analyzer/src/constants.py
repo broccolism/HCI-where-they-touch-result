@@ -17,33 +17,6 @@ LARGE_PAGES = [
     '/keyboard#4'
 ]
 
-TARGETS = [
-    'ㅂ',
-    'ㅈ',
-    'ㄷ',
-    'ㄱ',
-    'ㅅ',
-    'ㅛ',
-    'ㅕ',
-    'ㅑ',
-    'ㅐ',
-    'ㅔ',
-    'ㅁ',
-    'ㄴ',
-    'ㅇ',
-    'ㄹ',
-    'ㅎ',
-    'ㅗ',
-    'ㅓ',
-    'ㅏ',
-    'ㅣ',
-    'ㅋ',
-    'ㅌ',
-    'ㅊ',
-    'ㅍ',
-    'ㅠ',
-    'ㅜ',
-    'ㅡ']
 
 TARGET_IN_PAGE = [
     ("/keyboard#0", "ㅋㅏㄴㅔㅇㅣㅅㅕㄴ", "카네이션"),
@@ -55,12 +28,8 @@ TARGET_IN_PAGE = [
 ]
 
 
-BUTTON_IN_PAGE = [
-    ("/", "home-button"),
-    ("/notice", "notice-button"),
-    ("/question", "gender-button"),
-    ("/question", "undefined-button"),
-    ("/question", "question-button")
+PAGE_WITH_BUTTON = [
+    "/", "/notice", "/question"
 ]
 
 DPI = 100
