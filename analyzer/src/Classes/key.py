@@ -9,9 +9,11 @@ class Key:
         type_str = "Large" if self.is_large else "Small"
         return f"{type_str} {self.name}: ({self.center_x}, {self.center_y})"
 
-    def get_diff(self, pos):
-        diff_x = pos[0] - self.center_x
-        diff_y = pos[1] - self.center_y
+    def get_diff(self, pos, width):
+        real_x = float(self.center_x) - (float(width) - 350) / 2
+        real_y = self.center_y
+        diff_x = pos[0] - real_x
+        diff_y = pos[1] - real_y
         return (diff_x, diff_y)
 
     def is_large(self):

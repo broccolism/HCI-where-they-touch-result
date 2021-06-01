@@ -104,12 +104,6 @@ def get_logs_by_path(path):
 def get_touch_pos_list_by_target(logs, target_to_find):
     return_me = [touch.get_position() for touch in logs if touch.is_in_target(target_to_find)]
     return return_me, [const.GREEN for i in range(len(return_me))]
-    # for touch in logs:
-    #     if touch.is_in_target(target_to_find):
-    #         position = touch.get_position()
-    #         return_me.append(position)
-
-    # return return_me
 
 
 def get_touch_pos_in_page(logs):
@@ -178,12 +172,12 @@ def get_average_diff():
 
         if touch.get_page() in const.LARGE_PAGES:
             target_key = [key for key in LARGE_KEYS if key.get_name() == target][0]
-            x_diff_list_large.append(target_key.get_diff(position)[0])
-            y_diff_list_large.append(target_key.get_diff(position)[1])
+            x_diff_list_large.append(target_key.get_diff(position, touch.get_width())[0])
+            y_diff_list_large.append(target_key.get_diff(position, touch.get_width())[1])
         else:
             target_key = [key for key in SMALL_KEYS if key.get_name() == target][0]
-            x_diff_list_small.append(target_key.get_diff(position)[0])
-            y_diff_list_small.append(target_key.get_diff(position)[1])
+            x_diff_list_small.append(target_key.get_diff(position, touch.get_width())[0])
+            y_diff_list_small.append(target_key.get_diff(position, touch.get_width())[1])
 
     x_diff_list_large = np.array(x_diff_list_large)
     y_diff_list_large = np.array(y_diff_list_large)
@@ -354,15 +348,17 @@ def draw_all_button_touches():
         show_pos_graph(page_touches, C, f"{page}-all-touches")
 
 
+def draw_box_plots():
+    large_x, large_y, small_x, small_y = get_average_diff()
+    show_boxplot(large_x, large_y)
+    show_boxplot(small_x, small_y)
+
+
 if __name__ == "__main__":
     init_font()
     init_data()
 
     draw_all_key_touches()
     draw_all_button_touches()
-
-    large_x, large_y, small_x, small_y = get_average_diff()
-    show_boxplot(large_x, large_y)
-    show_boxplot(small_x, small_y)
-
+    draw_box_plots()
     get_avg_trials()

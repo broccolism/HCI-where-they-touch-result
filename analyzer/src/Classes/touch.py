@@ -8,6 +8,7 @@ class Touch:
     def __init__(self, width, x, y, page, target, created_at_str):
         self.x = float(x) - (float(width) - 350) / 2
         self.y = float(y)
+        self.width = float(width)
         self.page = page
         self.target = target
         self.created_at = datetime.datetime.strptime(created_at_str, '%Y-%m-%d %H:%M:%S')
@@ -20,6 +21,9 @@ class Touch:
 
     def get_page(self):
         return self.page
+
+    def get_width(self):
+        return self.width
 
     def get_target(self):
         return self.target
